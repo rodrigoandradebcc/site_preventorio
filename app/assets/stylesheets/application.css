@@ -71,6 +71,10 @@
  	background: #787879 !important;
  }
 
+ .corcheia5{
+ 	background: white !important;
+ }
+
  .desceimagem{
  	padding-top: 90px;
  }
@@ -89,4 +93,8 @@
 
  .abaixapartefinal{
  	padding-bottom: 100px;
+ }
+
+ .mudafonte{
+ 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
  }
