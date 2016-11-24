@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -17,56 +17,86 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href=""><%= image_tag("prev.png", height: '50', width: '60') %></a><strong class="mudafonte">Preventório Santa Terezinha</strong>
+				<a href=""><%= image_tag("prev.png", height: '70', width: '80') %></a><strong class="mudafonte">Preventório Santa Terezinha</strong>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+					<li><a href="../navbar-static-top/">Static top</a></li>
+					<li><a href="../navbar-fixed-top/">Fixed top</a></li>
+				</ul>
 			</div>
 		</div>
+	</nav> -->
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href=""><%= image_tag("prev.png", height: '70', width: '80') %></a>
+				<strong class="mudafonte">Preventório Santa Terezinha</strong>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../navbar-fixed-top/">Quem Somos</a></li>
+					<li><a href="../navbar-fixed-top/">Como Atuamos</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="../navbar-fixed-top/">Como Ajudar</a></li>
+					<li><a href="../navbar-fixed-top/">Eventos</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
 	</nav>
 
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		</ol>
+</div> <!-- /container -->
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
 
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-			<div class="item active">
-				<%= image_tag("banner1.png") %>
-				<div class="carousel-caption">
-					<!-- <h3>Caption Text</h3> -->
-				</div>
-			</div>
-			<div class="item">
-				<%= image_tag("banner1.png") %>
-				<div class="carousel-caption">
-				</div>
-			</div>
-			<div class="item">
-				<%= image_tag("banner1.png") %>
-				<div class="carousel-caption">
-				</div>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<%= image_tag("banner1.png") %>
+			<div class="carousel-caption">
+				<!-- <h3>Caption Text</h3> -->
 			</div>
 		</div>
+		<div class="item">
+			<%= image_tag("banner1.png") %>
+			<div class="carousel-caption">
+			</div>
+		</div>
+		<div class="item">
+			<%= image_tag("banner1.png") %>
+			<div class="carousel-caption">
+			</div>
+		</div>
+	</div>
 
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
-	</div> <!-- Carousel -->
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div> <!-- Carousel -->
 
-	<div class="container">
-		<!-- Example row of columns -->
-		<h1 class="centered mudafonte">SERVIÇOS</h1><br>
+<div class="container" id="servicos">
+	<!-- Example row of columns -->
+	<h1 class="centered mudafonte">SERVIÇOS</h1><br>
 
-		<div class="row abaixapartefinal">
-			<div class="col-md-4">
-				<%= image_tag("servInfantil.png", class: "img-responsive center-block") %>
+	<div class="row abaixapartefinal">
+		<div class="col-md-4">
+			<%= image_tag("servInfantil.png", class: "img-responsive center-block") %>
 				<p class="descetexto">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p><!-- 
 				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
 			</div>
@@ -78,84 +108,121 @@
 				<%= image_tag("servmedico.png", class: "img-responsive center-block") %>
 				<p class="descetexto">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 			</div>
-			<br>
-			<br>
 		</div>
 
 
 	</div> <!-- /container -->
 
-	<div class="jumbotron corcheia2">
-		<div class="container">
-			<h2 class="centered mudafonte">EVENTOS</h2><br>
-			<div class="row abaixapartefinal">
-				<div class="col-sm-6">
-					<%= image_tag("eventoCeleb.png", class: "img-responsive center-block") %>
-				</div>
-				<div class="col-sm-6">
-					<%= image_tag("eventoExemplo.png", class: "img-responsive center-block") %>
-				</div>
-				<div class="col-sm-6">
-					<%= image_tag("eventosCriança.png", class: "img-responsive center-block desceimagem") %>
-				</div>
-				<div class="col-sm-6">
-					<%= image_tag("eventosProfMon.png", class: "img-responsive center-block desceimagem") %>
-				</div>
-			</div>
+	<div class="corcheia6">
+		<div class="container" id="servicos">
+			<!-- Example row of columns -->
+			<h2 class="centered mudafonte textoprincipal">Preencha esse espaço com solidariedade #FaçaSuaDoação</h2><br><br>
+			<h4 class="centered mudafonte textoprincipal">Informações - Disque (91) 2345235</h4>
 		</div>
 	</div>
 
-	<div class="jumbotron corcheia5">
-		<div class="container">
-			<h2 class="centered mudafonte">GALERIA</h2><br>
-			<div class="row abaixapartefinal">
-				<div class="col-sm-4">
-					<%= image_tag("preve1.jpg", class: "img-responsive center-block") %>
-				</div>
-				<div class="col-sm-4">
-					<%= image_tag("prev8.jpg", class: "img-responsive center-block") %>
-				</div>
-				<div class="col-sm-4">
-					<%= image_tag("prev9.jpg", class: "img-responsive center-block") %>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	<div class="jumbotron corcheia3">
-		<div class="container">
-			<%= image_tag("apoiadoresbanner2.png", class: "img-responsive center-block") %>
-		</div>
-	</div>
-	<div class="jumbotron corcheia4">
-		<footer>
+	<div class="">
+		<div class="container" id="servicos">
+			<!-- Example row of columns -->
 			<div class="row">
-				<div class="col-sm-6">
-					<%= image_tag("logoBarra.png", class: "img-responsive center-block") %>
-					<h4 class="textoprincipal textorodape mudafonte">
-						Endereço<br>
-						Av. Almirante Barroso, 4325 - Souza, Belém - PÁ, 66610-000<br>
-						Telefone: (91) 3243-2868
-					</h4>
-				</div>
-				<div class="col-sm-6">
-					<h4 class="textoprincipal textorodape2 mudafonte">
-						SOBRE<br>
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-						lorem ipsum lorem ipsum lorem ipsum
-					</h4>
+				<div role="main" class="col-md-8">
+					<h3 class="centered mudafonte subindo">SOBRE</h3><br>
+					<h5 class="just mudafonte">O Preventório Santa Terezinha foi fundado em 11/10/1948, pra atender crianças sadias filhas de pais tuberculosos:<br>
+						Daí o nome -<br>
+						Preventório --- vem de prevenção<br>
+						Santa Terezinha - foi uma santa católica que morreu, muito jovem, vítima da tuberculose.
+						Situado em prédio próprio - Av almirante Barroso, 4352.<br>
+						O Preventório foi fundado por um grupo de amigas, dentre as quais estava minha avó, que ficou como  presidente até 1996 quando eu assumi a incumbência de levar adiante o trabalho ao qual ela se dedicou por toda a vida.<br>
+						Com o passar do tempo e a erradicação da doença, a Casa passou a atender crianças carentes que moravam na Instituição.<br>
+						Por bastante tempo recebeu ajuda de uma ordem religiosa, que, através de um grupo de freiras, que também moravam no local, realizavam as tarefas de acompanhar as crianças.<br><br>
+
+						Em 96 passamos a atender em regime em creche.<br><br>
+
+						Desde a década de 60 havia um convênio com a Secretaria de Educação do Estado (SEDUC) através do qual, funcionava uma escola nas dependências do Preventório, mas, dada a necessidade de mudança de rumos Institucionais houve uma mudança da relação com a SEDUC que manteve a escola lá, desta feita sob um contrato de aluguel.<br><br>
+
+
+						A Secretaria de Educação alugou a parte térrea do prédio onde a escola já funcionava.
+						Com os recursos financeiros da locação, então foi possível realizar a reforma da parte de cima do prédio para o funcionamento do "novo preventório".
+						esses recursos financeiros - foi que possibilitaram a reforma e é com ele que contamos, até agora, para fazer frente a (parte) do novo projeto.<br><br></h5>
+					</div>
+					<aside role="complementary" class="col-md-4">
+					<br>
+						<%= image_tag("eventoCeleb.png", class: "img-responsive center-block") %>
+					</adise>	
 				</div>
 			</div>
-		</footer>
-	</div>
-	
+
+			<div class="jumbotron corcheia2">
+				<div class="container">
+					<h2 class="centered mudafonte">EVENTOS</h2><br>
+					<div class="row abaixapartefinal">
+						<div class="col-sm-6">
+							<%= image_tag("eventoCeleb.png", class: "img-responsive center-block") %>
+						</div>
+						<div class="col-sm-6">
+							<%= image_tag("eventoExemplo.png", class: "img-responsive center-block") %>
+						</div>
+						<div class="col-sm-6">
+							<%= image_tag("eventosCriança.png", class: "img-responsive center-block desceimagem") %>
+						</div>
+						<div class="col-sm-6">
+							<%= image_tag("eventosProfMon.png", class: "img-responsive center-block desceimagem") %>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jumbotron corcheia5">
+				<div class="container">
+					<h2 class="centered mudafonte">GALERIA</h2><br>
+					<div class="row abaixapartefinal">
+						<div class="col-sm-4">
+							<%= image_tag("preve1.jpg", class: "img-responsive center-block") %>
+						</div>
+						<div class="col-sm-4">
+							<%= image_tag("prev8.jpg", class: "img-responsive center-block") %>
+						</div>
+						<div class="col-sm-4">
+							<%= image_tag("prev9.jpg", class: "img-responsive center-block") %>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="jumbotron corcheia3">
+				<div class="container">
+					<%= image_tag("apoiadoresbanner2.png", class: "img-responsive center-block") %>
+				</div>
+			</div>
+			<div class="jumbotron corcheia4">
+				<footer>
+					<div class="row">
+						<div class="col-sm-6">
+							<%= image_tag("logoBarra.png", class: "img-responsive center-block") %>
+							<h4 class="textoprincipal textorodape mudafonte">
+								Endereço<br>
+								Av. Almirante Barroso, 4325 - Souza, Belém - PÁ, 66610-000<br>
+								Telefone: (91) 3243-2868
+							</h4>
+						</div>
+						<div class="col-sm-6">
+							<h4 class="textoprincipal textorodape2 mudafonte">
+								SOBRE<br>
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+								lorem ipsum lorem ipsum lorem ipsum
+							</h4>
+						</div>
+					</div>
+				</footer>
+			</div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
