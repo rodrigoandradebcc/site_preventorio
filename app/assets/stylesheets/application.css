@@ -113,6 +113,7 @@
  	width: 100% !important;
  	height: 100% !important;
  }
+ 
  .just{
  	text-align: justify;
  }
@@ -125,21 +126,3 @@
  	text-align: justify !important;
  	text-justify: inter-word !important;
  }
-
- .img {
- 	height: 100%;
- 	width: 100%;
-
- 	-webkit-transition: all 1s ease;
- 	-moz-transition: all 1s ease;
- 	-o-transition: all 1s ease;
- 	-ms-transition: all 1s ease;
- 	transition: all 1s ease;
-
- }
-
- .img:hover {
- 	width: 150%;
- 	height: 150%;
- }
-/*CSS ima
