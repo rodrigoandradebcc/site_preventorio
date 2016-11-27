@@ -68,11 +68,11 @@
  	background: #e0e3e3 !important;
  }
 
-.corcheia3{
+ .corcheia3{
  	background: #ffce2c !important;
  }
 
-.corcheia4{
+ .corcheia4{
  	background: #787879 !important;
  }
 
@@ -106,7 +106,7 @@
  }
 
  .mudafonte{
- 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
+ 	font-family: Century Gothic, CenturyGothic, AppleGothic,sans-serif !important;
  }
 
  .tamanhototal{
@@ -119,4 +119,9 @@
 
  .subindo{
  	margin-bottom: 0px !important;
+ }
+
+ .justificatexto{
+ 	text-align: justify !important;
+ 	text-justify: inter-word !important;
  }
