@@ -113,7 +113,7 @@
  	width: 100% !important;
  	height: 100% !important;
  }
- 
+
  .just{
  	text-align: justify;
  }
@@ -126,3 +126,10 @@
  	text-align: justify !important;
  	text-justify: inter-word !important;
  }
+
+.copyright-section {
+    padding: 15px 0;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
