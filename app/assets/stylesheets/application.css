@@ -14,7 +14,7 @@
  *= require_self
  */
  body{
- 	padding-top: 10px;
+ 	padding-top: 90px;
  }
 
  .jumbotron{
@@ -132,4 +132,20 @@
     font-size: 11px;
     letter-spacing: 0.5px;
     border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.affix {
+    position: fixed !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    left: 0;
+    border-width: 0 0 1px;
+    z-index: 1030;
+}
+
+.navbar-right{
+	padding-top: 10px;
 }
