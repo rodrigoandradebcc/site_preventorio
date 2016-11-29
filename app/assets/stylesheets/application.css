@@ -136,8 +136,8 @@
 
 .affix {
     position: fixed !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     right: 0;
     top: 0;
     border-radius: 0;
